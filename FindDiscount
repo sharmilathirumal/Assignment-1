@@ -1,0 +1,28 @@
+/* Online Java Compiler and Editor */
+import java.util.Scanner;
+public class FindDiscount{
+
+     public static void main(String []args){
+        Scanner s = new Scanner(System.in);
+        System.out.println("please enter your purchase amount");
+        int amount = s.nextInt();
+        double discountAmount = amount;
+        double discount =0.0;
+        if(amount<500){
+            System.out.println("you don't have any discount...");
+            System.out.println("your total amount is" +" "+amount);
+        }
+        else if(amount>=500 && amount<=1000){
+             discount =(amount*10)/100;
+            discountAmount =amount-discount;
+            System.out.println("you have 10% discount of your total amount..");
+            System.out.println("your total amount is"+" "+amount+" "+"and you need to pay only"+" "+discountAmount);
+        }
+        else{
+              discount =(amount *20)/100;
+             discountAmount =amount-discount;
+            System.out.println("you have 20% discount of your total amount..");
+            System.out.println("your total amount is"+" "+amount+" "+"and you need to pay only"+" "+discountAmount);
+        }
+     }
+}
