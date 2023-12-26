@@ -1,0 +1,21 @@
+/* Online Java Compiler and Editor */
+import java.util.Scanner;
+public class FindSmallestValue{
+
+     public static void main(String []args){
+Scanner s = new Scanner(System.in);
+  System.out.println("Enter the three values");
+  int firstValue = s.nextInt();
+  int secondValue =s.nextInt();
+  int thirdValue = s.nextInt();  
+  if(firstValue <secondValue && firstValue <thirdValue) {
+      System.out.println("first value"+" "+firstValue+" "+"is the smallest value");
+  }
+  else if(secondValue<firstValue &&secondValue<thirdValue) {
+      System.out.println("first value"+" "+secondValue+" "+"is the smallest value");
+  }
+  else{
+      System.out.println("third value"+" "+thirdValue+" "+"is the smallest value");  
+  }   
+  }
+}
